@@ -6,10 +6,6 @@ dist/
 # dependencies
 node_modules/
 
-# i18n templates
-src/pages/ja
-src/pages/zh
-
 # logs
 npm-debug.log*
 yarn-debug.log*
