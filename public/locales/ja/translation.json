@@ -1,0 +1,29 @@
+{
+    "site": {
+      "name": "Tsubaki",
+      "title": "Tsubaki の個人ページ",
+      "description": "Tsubaki の個人ページ",
+      "wip": "以下のコンテンツは、Work in progress（進行中）です。"
+    },
+    "menu": {
+      "home": "ホーム",
+      "work": "作品紹介",
+      "about": "私について"
+    },
+    "footer": {
+      "templateCredit": "Astro Template をベースにした二次展開"
+    },
+    "home": {
+      "title": "Welcome to my awesome website!",
+      "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
+      "introBold": "こんにちは、Tsubaki です。",
+      "introDetail": "フロントエンド開発エンジニア | 現在、北京に在住",
+      "developer": "開発エンジニア",
+      "contentCreator": "コンテンツクリエイター",
+      "selectedWork": "代表的な作品",
+      "selectedWorkDetail": "近年携わった作品の一部をご紹介します。",
+      "viewAll": "すべて見る",
+      "contactInterest": "連絡を取りたい方",
+      "SendEmail": "メールを送信"
+    }
+  }

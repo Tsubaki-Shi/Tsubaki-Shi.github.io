@@ -1,0 +1,29 @@
+{
+  "site": {
+    "name": "Tsubaki",
+    "title": "Tsubaki 的个人主页",
+    "description": "Tsubaki 的个人主页",
+    "wip": "这部分内容正在施工中"
+  },
+  "menu": {
+    "home": "主页",
+    "work": "作品",
+    "about": "关于"
+  },
+  "footer": {
+    "templateCredit": "基于 Astro 模板的二次开发"
+  },
+  "home": {
+    "title": "Welcome to my awesome website!",
+    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
+    "introBold": "你好, 我是 Tsubaki",
+    "introDetail": "前端开发工程师 | 现居北京",
+    "developer": "开发工程师",
+    "contentCreator": "内容创作者",
+    "selectedWork": "部分作品",
+    "selectedWorkDetail": "近年我参与的部分作品",
+    "viewAll": "查看全部",
+    "contactInterest": "想和我聊一聊？",
+    "SendEmail": "发送邮件"
+  }
+}

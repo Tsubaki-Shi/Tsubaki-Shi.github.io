@@ -1,0 +1,29 @@
+{
+  "site": {
+    "name": "Tsubaki",
+    "title": "Tsubaki's HomePage",
+    "description": "Tsubaki's HomePage",
+    "wip": "Work in progress"
+  },
+  "menu": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About"
+  },
+  "footer": {
+    "templateCredit": "Designed & Developed in Portland with Astro "
+  },
+  "home": {
+    "title": "Welcome to my awesome website!",
+    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!",
+    "introBold": "Hello, I'm Tsubaki",
+    "introDetail": "I am a Frontend Developer, currently based in Beijing, CN.",
+    "developer": "Developer",
+    "contentCreator": "Content Creator",
+    "selectedWork": "Selected Work",
+    "selectedWorkDetail": "Take a look below at some of my featured work from the past few years.",
+    "viewAll": "View All",
+    "contactInterest": "Have Some Talk？",
+    "SendEmail": "Send Me a E-Mail"
+  }
+}
