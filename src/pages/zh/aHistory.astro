@@ -1,13 +1,19 @@
 ---
 import { t, changeLanguage } from "i18next";
+import Icon from "../../components/Icon.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import ContactCTA from "../../components/ContactCTA.astro";
 import Hero from "../../components/Hero.astro";
+import someJson from "../../static/testStruct.json";
+import { stringifyChunk } from "astro/dist/runtime/server";
 
-changeLanguage("ja");
+changeLanguage("zh");
+
+const generateArray = (length: number) => {
+    return Array.from({ length }, () => ``);
+};
 ---
 
-<BaseLayout title="About | nothing" description="nothing">
+<BaseLayout title="About | " description="About me">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
@@ -18,12 +24,34 @@ changeLanguage("ja");
 					width="1553"
 					height="873"
 					src="/assets/at-work.jpg"
-					alt="nothing at work with a colleague"
+					alt="at work with a colleague"
 				/> -->
 			</Hero>
 
-			<!-- <section>
-				<h2 class="section-title">Background</h2>
+			<section>
+				<table>
+					<thead>
+						<tr>
+							<th>name</th>
+							<th>name_jp</th>
+							<th>rate</th>
+							<th>time</th>
+							<th>status</th>
+						</tr>
+					</thead>
+					<tbody>
+						{someJson.map((item) => (
+							<tr>
+								{Object.keys(item).map((key) => (
+									key == "rate" ? 
+										<td>{generateArray(item[key]).map( () => <Icon icon="star" color="var(--accent-regular)" gradient/> )}</td> :
+										<td>{item[key]}</td>
+								))}
+							</tr>
+						))}
+					</tbody>
+				</table>
+				<!-- <h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
 						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
@@ -43,23 +71,9 @@ changeLanguage("ja");
 						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
 						pretium fusce.
 					</p>
-				</div>
+				</div> -->
 			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section> -->
 		</main>
-
-		<ContactCTA />
 	</div>
 </BaseLayout>
 
@@ -81,6 +95,16 @@ changeLanguage("ja");
 		flex-direction: column;
 		gap: 0.5rem;
 		color: var(--gray-200);
+	}
+
+	table {
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+	
+	th, td {
+		text-align: center;
+		border-bottom: 1px solid white;
 	}
 
 	.section-title {
@@ -105,14 +129,14 @@ changeLanguage("ja");
 	}
 
 	@media (min-width: 50em) {
-		.about {
+		/* .about {
 			display: grid;
 			grid-template-columns: 1fr 60% 1fr;
 		}
 
 		.about > :global(:first-child) {
 			grid-column-start: 2;
-		}
+		} */
 
 		section {
 			display: contents;
